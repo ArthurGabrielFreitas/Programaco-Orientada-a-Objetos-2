@@ -26,6 +26,6 @@ public class EmpregadoAssalariado extends Empregado {
     @Override
     public String toString() {
         return "Empregado Assalariado: " + String.join(" ", getNome(), getSobrenome()) + "\nNúmero do Seguro Social: "
-                + getNumeroSeguroSocial() + "\nSalário Semanal: $" + salarioSemanal;
+                + getNumeroSeguroSocial() + "\nSalário Semanal: $" + String.format("%.2f", salarioSemanal);
     }
 }
